@@ -1,25 +1,55 @@
 <!doctype html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
-    <title>Lovable App</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
-
-    <!-- TODO: Update og:title to match your application name -->
-    <meta property="og:title" content="Lovable App" />
-    <meta property="og:description" content="Lovable Generated Project" />
+    <title>SmileArt Dental — Nowoczesna Klinika Stomatologiczna Kraków</title>
+    <meta name="description" content="Nowoczesna klinika stomatologiczna w Krakowie. Implanty, ortodoncja, estetyka, bezbolesne zabiegi. Umów bezpłatną konsultację!" />
+    <meta property="og:title" content="SmileArt Dental — Klinika Stomatologiczna Kraków" />
+    <meta property="og:description" content="Nowoczesna klinika stomatologiczna w Krakowie. Implanty, ortodoncja, estetyka." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
+    <meta property="og:image" content="https://smileartdental.pl/og-image.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "SmileArt Dental Klinika Stomatologiczna",
+      "url": "https://smileartdental.pl",
+      "description": "Nowoczesna klinika stomatologiczna w Krakowie. Implanty, ortodoncja, estetyka.",
+      "address": {"@type": "PostalAddress","streetAddress": "ul. Józefa 14/2","addressLocality": "Kraków","addressRegion": "małopolskie","postalCode": "31-056","addressCountry": "PL"},
+      "geo": {"@type": "GeoCoordinates","latitude": 50.0516,"longitude": 19.9476},
+      "telephone": "+48123456789",
+      "email": "kontakt@smileartdental.pl",
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification","dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens": "09:00","closes": "21:00"},
+        {"@type": "OpeningHoursSpecification","dayOfWeek": "Saturday","opens": "09:00","closes": "16:00"}
+      ],
+      "priceRange": "zł zł",
+      "aggregateRating": {"@type": "AggregateRating","ratingValue": "4.9","reviewCount": "1500","bestRating": "5"},
+      "sameAs": ["https://www.facebook.com/smileartdental","https://www.instagram.com/smileartdental"]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question","name": "Czy leczenie u dentysty boli?","acceptedAnswer": {"@type": "Answer","text": "W SmileArt Dental stosujemy komputerowe znieczulenie miejscowe — bezbolesne i precyzyjne. Większość zabiegów wykonujemy całkowicie bez bólu."}},
+        {"@type": "Question","name": "Ile kosztuje implant w Krakowie?","acceptedAnswer": {"@type": "Answer","text": "Koszt implantu w SmileArt Dental zaczyna się od 2500 zł za implant bez korony. Pełne leczenie implantologiczne z koroną cyrkonową to ok. 5500 zł."}},
+        {"@type": "Question","name": "Czy macie Invisalign w Krakowie?","acceptedAnswer": {"@type": "Answer","text": "Tak, jesteśmy certyfikowanym dostawcą Invisalign. Koszt leczenia zaczyna się od 6000 zł. Dr Zofia Lis jest Invisalign Diamond Provider."}},
+        {"@type": "Question","name": "Jak umówić wizytę?","acceptedAnswer": {"@type": "Answer","text": "Możesz umówić się przez formularz na stronie, zadzwonić pod +48 12 345 67 89 lub napisać na WhatsApp. Pierwsza konsultacja jest bezpłatna."}}
+      ]
+    }
+    </script>
   </head>
-
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
