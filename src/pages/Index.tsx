@@ -1,16 +1,36 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import SEOHead from '@/components/SEOHead';
+import HeroSection from '@/components/sections/HeroSection';
+import StatsSection from '@/components/sections/StatsSection';
+import ServicesSection from '@/components/sections/ServicesSection';
+import WhyUsSection from '@/components/sections/WhyUsSection';
+import BeforeAfterSection from '@/components/sections/BeforeAfterSection';
+import TeamSection from '@/components/sections/TeamSection';
+import TestimonialsSection from '@/components/sections/TestimonialsSection';
+import BlogPreviewSection from '@/components/sections/BlogPreviewSection';
+import ContactSection from '@/components/sections/ContactSection';
+import { useScrollReveal } from '@/hooks/useScrollReveal';
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+export default function Index() {
+  useScrollReveal();
+
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
-    </div>
+    <>
+      <SEOHead
+        title="SmileArt Dental — Nowoczesna Klinika Stomatologiczna Kraków"
+        description="Nowoczesna klinika stomatologiczna w Krakowie. Implanty, ortodoncja, estetyka, bezbolesne zabiegi. Umów bezpłatną konsultację!"
+        canonical="https://smileartdental.pl/"
+      />
+      <main id="main">
+        <HeroSection />
+        <StatsSection />
+        <ServicesSection />
+        <WhyUsSection />
+        <BeforeAfterSection />
+        <TeamSection />
+        <TestimonialsSection />
+        <BlogPreviewSection />
+        <ContactSection />
+      </main>
+    </>
   );
-};
-
-const Index = PlaceholderIndex;
-
-export default Index;
+}
