@@ -11,17 +11,15 @@ export default function ContactSection() {
     if (honey) return; // honeypot
     setSubmitted(true);
     // GTM event
-    if (typeof window !== 'undefined' && (window as any).dataLayer) {
-      (window as any).dataLayer.push({
-        event: 'form_submission',
-        form_type: 'appointment_request',
-        clinic: 'SmileArt Dental',
-      });
-    }
+    window.dataLayer?.push({
+      event: 'form_submission',
+      form_type: 'appointment_request',
+      clinic: 'SmileArt Dental',
+    });
   };
 
   return (
-    <section id="kontakt" className="py-20 bg-card">
+    <section id="kontakt" className="scroll-mt-28 py-20 bg-card">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           {/* Form side */}

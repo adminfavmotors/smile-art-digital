@@ -13,15 +13,11 @@ export default function FloatingButtons() {
   if (!visible) return null;
 
   const handleWaClick = () => {
-    if (typeof window !== 'undefined' && (window as any).dataLayer) {
-      (window as any).dataLayer.push({ event: 'whatsapp_click', clinic: 'SmileArt Dental' });
-    }
+    window.dataLayer?.push({ event: 'whatsapp_click', clinic: 'SmileArt Dental' });
   };
 
   const handlePhoneClick = () => {
-    if (typeof window !== 'undefined' && (window as any).dataLayer) {
-      (window as any).dataLayer.push({ event: 'phone_click', clinic: 'SmileArt Dental' });
-    }
+    window.dataLayer?.push({ event: 'phone_click', clinic: 'SmileArt Dental' });
   };
 
   return (
