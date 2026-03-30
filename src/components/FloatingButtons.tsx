@@ -12,19 +12,10 @@ export default function FloatingButtons() {
 
   if (!visible) return null;
 
-  const handleWaClick = () => {
-    window.dataLayer?.push({ event: 'whatsapp_click', clinic: 'SmileArt Dental' });
-  };
-
-  const handlePhoneClick = () => {
-    window.dataLayer?.push({ event: 'phone_click', clinic: 'SmileArt Dental' });
-  };
-
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
       <a
         href="tel:+48123456789"
-        onClick={handlePhoneClick}
         className="w-14 h-14 rounded-full bg-gold flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
         aria-label="Zadzwoń do kliniki"
       >
@@ -32,7 +23,6 @@ export default function FloatingButtons() {
       </a>
       <a
         href="https://wa.me/48123456789"
-        onClick={handleWaClick}
         target="_blank"
         rel="noopener noreferrer"
         className="w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform pulse-whatsapp"

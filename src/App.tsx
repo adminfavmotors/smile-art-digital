@@ -7,7 +7,6 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
-import CookieConsent from "@/components/CookieConsent";
 import Index from "./pages/Index";
 import Cennik from "./pages/Cennik";
 import Blog from "./pages/Blog";
@@ -62,7 +61,6 @@ const App = () => (
         </Routes>
         <Footer />
         <FloatingButtons />
-        <CookieConsent />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

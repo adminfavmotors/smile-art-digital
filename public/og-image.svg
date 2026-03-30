@@ -1,0 +1,32 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#12263A"/>
+  <circle cx="941" cy="146" r="189" fill="url(#paint0_radial)" fill-opacity="0.8"/>
+  <circle cx="211" cy="534" r="208" fill="url(#paint1_radial)" fill-opacity="0.4"/>
+  <rect x="84" y="82" width="1032" height="466" rx="36" fill="#FFFFFF" fill-opacity="0.04" stroke="#D0A94B" stroke-opacity="0.18"/>
+  <path d="M909 176C846.344 176 823 217.211 823 259.887C823 317.367 860.93 374.84 882.391 419.176C889 433.953 895.609 452 909 452C922.391 452 928.999 433.953 935.609 419.176C957.07 374.84 995 317.367 995 259.887C995 217.211 971.656 176 909 176Z" stroke="#D0A94B" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M869 244C869 222.461 886.461 205 908 205C929.539 205 947 222.461 947 244" stroke="#D0A94B" stroke-width="10" stroke-linecap="round"/>
+  <path d="M167 190H360" stroke="#D0A94B" stroke-width="10" stroke-linecap="round"/>
+  <text x="167" y="288" fill="#F7F2E9" font-family="Georgia, 'Times New Roman', serif" font-size="82" font-weight="700">
+    SmileArt Dental
+  </text>
+  <text x="167" y="360" fill="#D6DEE7" font-family="'Trebuchet MS', Arial, sans-serif" font-size="32">
+    Nowoczesna klinika stomatologiczna w Krakowie
+  </text>
+  <text x="167" y="410" fill="#D6DEE7" font-family="'Trebuchet MS', Arial, sans-serif" font-size="32">
+    Implanty, ortodoncja, estetyka, bezbolesne zabiegi
+  </text>
+  <rect x="167" y="454" width="236" height="56" rx="28" fill="#D0A94B"/>
+  <text x="206" y="491" fill="#12263A" font-family="'Trebuchet MS', Arial, sans-serif" font-size="26" font-weight="700">
+    Portfolio Concept
+  </text>
+  <defs>
+    <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(941 146) rotate(90) scale(189)">
+      <stop stop-color="#D0A94B"/>
+      <stop offset="1" stop-color="#D0A94B" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(211 534) rotate(90) scale(208)">
+      <stop stop-color="#FFF7E8"/>
+      <stop offset="1" stop-color="#FFF7E8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

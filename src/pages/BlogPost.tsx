@@ -47,11 +47,29 @@ export default function BlogPost() {
 
       <main id="main" className="py-12 bg-background">
         <div className="container mx-auto px-4 max-w-3xl">
-          {/* Hero image placeholder */}
-          <div className="h-64 md:h-80 bg-navy rounded-lg mb-10 flex items-center justify-center">
-            <svg width="80" height="80" viewBox="0 0 40 40" fill="none" aria-hidden="true" className="opacity-20">
-              <path d="M20 5c-6 0-8 4-8 8 0 6 4 12 6 16 .5 1 1 2 2 2s1.5-1 2-2c2-4 6-10 6-16 0-4-2-8-8-8z" stroke="white" strokeWidth="2"/>
-            </svg>
+          <div className="relative overflow-hidden rounded-lg mb-10 bg-navy p-8 md:p-10 shadow-card">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(208,169,75,0.22),transparent_35%),radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.08),transparent_30%)]" />
+            <div className="relative flex min-h-64 flex-col justify-between gap-8 md:flex-row md:items-end">
+              <div className="max-w-xl">
+                <p className="text-gold text-xs font-body font-bold uppercase tracking-[0.35em]">
+                  SmileArt Journal
+                </p>
+                <h2 className="mt-4 font-heading text-2xl md:text-3xl text-primary-foreground">
+                  {post.title}
+                </h2>
+                <p className="mt-4 text-light font-body leading-relaxed">
+                  {post.excerpt}
+                </p>
+              </div>
+              <div className="self-start md:self-auto">
+                <div className="w-24 h-24 rounded-full border border-accent/30 bg-white/5 backdrop-blur-sm flex items-center justify-center">
+                  <svg width="52" height="52" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                    <path d="M20 5c-6 0-8 4-8 8 0 6 4 12 6 16 .5 1 1 2 2 2s1.5-1 2-2c2-4 6-10 6-16 0-4-2-8-8-8z" stroke="currentColor" strokeWidth="2" className="text-gold"/>
+                    <path d="M16 12a4 4 0 018 0" stroke="currentColor" strokeWidth="1.5" className="text-primary-foreground"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Article content */}

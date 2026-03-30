@@ -10,12 +10,6 @@ export default function ContactSection() {
     e.preventDefault();
     if (honey) return; // honeypot
     setSubmitted(true);
-    // GTM event
-    window.dataLayer?.push({
-      event: 'form_submission',
-      form_type: 'appointment_request',
-      clinic: 'SmileArt Dental',
-    });
   };
 
   return (
