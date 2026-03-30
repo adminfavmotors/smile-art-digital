@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { siteConfig } from '@/lib/site';
 
 interface SEOProps {
   title: string;
@@ -9,7 +10,7 @@ interface SEOProps {
 
 export default function SEOHead({ title, description, canonical, ogImage }: SEOProps) {
   useEffect(() => {
-    const resolvedOgImage = ogImage ?? 'https://smileartdental.pl/og-image.svg';
+    const resolvedOgImage = ogImage ?? siteConfig.ogImage;
 
     document.title = title;
     const setMeta = (name: string, content: string, attr = 'name') => {
